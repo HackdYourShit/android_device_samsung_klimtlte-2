@@ -20,8 +20,6 @@ LOCAL_PATH := device/samsung/klimtlte
 BOARD_VENDOR := samsung
 TARGET_SOC := exynos5420
 
-# Audio
-TARGET_AUDIOHAL_VARIANT := samsung
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
@@ -36,6 +34,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 # Bootloader
 TARGET_OTA_ASSERT_DEVICE := klimtlte
 
+# Clang
+USE_CLANG_PLATFORM_BUILD := true
+# GPS-shims
+TARGET_LD_SHIM_LIBS := /system/bin/gpsd|libshim.so
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_deathly_klimtlte_defconfig
 
