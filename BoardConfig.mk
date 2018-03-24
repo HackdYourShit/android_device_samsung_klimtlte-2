@@ -44,8 +44,8 @@ TARGET_KERNEL_CONFIG := lineageos_deathly_klimtlte_defconfig
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# Cyanogen Hardware
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+# MoKee Hardware
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/mkhw
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
@@ -60,8 +60,8 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 BOARD_SEPOLICY_DIRS += device/samsung/klimtlte/sepolicy
 
-# Cyanogen Hardware
-BOARD_HARDWARE_CLASS := $(COMMON_PATH)/cmhw
+# MoKee Hardware
+BOARD_HARDWARE_CLASS := $(COMMON_PATH)/mkhw
 
 # Camera: portrait orientation
 BOARD_CAMERA_FRONT_ROTATION := 270
